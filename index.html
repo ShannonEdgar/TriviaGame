@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trivia Quiz</title>
+
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+   <script src="assets/javascript/app.js"></script>
+
+
+</head>
+<body>
+
+<div id="container">
+
+<h1>Complete the quiz in the time allowed.</h1>Click "Submit" when you are finished.<br>
+
+<div id="hide">
+<h1><div>Time left = <span id="timer"></span></div></h1><br><br>
+
+<form name="quiz" method="post" name="buttons" id="quiz" onsubmit="return false">
+
+<ul><div class="question">Where would you find the Sea of Tranquility?</div></ul>
+<input id="answer" type="radio" name="group1" value="wrong"> Turkey<br>
+<input id="answer" type="radio" name="group1" value="wrong"> Asia<br>
+<input id="answer" type="radio" name="group1" value="correct"> The Moon<hr>
+
+<ul><div class="question">What is another word for lexicon?</div></ul>
+<input id="answer" type="radio" name="group2" value="wrong"> Manufacturer<br>
+<input id="answer" type="radio" name="group2" value="wrong"> Horse<br>
+<input id="answer" type="radio" name="group2" value="correct"> Dictionary<hr>
+
+<ul><div class="question">Name the seventh planet from the sun</div></ul>
+<input id="answer" type="radio" name="group3" value="correct"> Uranus<br>
+<input id="answer" type="radio" name="group3" value="wrong"> Earth<br>
+<input id="answer" type="radio" name="group3" value="wrong"> Mars<hr>
+
+
+<button id="submit" type="submit">Submit</button><br>
+
+</form></div>
+
+<br>
+
+
+<div id="results"></div>
+<div id="results2"></div>
+<div id="results3"></div>
+
+
+
+
+</body>
+</html>
