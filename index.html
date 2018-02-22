@@ -5,40 +5,55 @@
 	<title>Trivia Quiz</title>
 
 <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-   <script src="assets/javascript/app.js"></script>
+		<script src="assets/javascript/app.js"></script>
 
+		<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Monoton" rel="stylesheet">
 
 </head>
 <body>
 
-<div id="container">
 
-<h1>Complete the quiz in the time allowed.</h1>Click "Submit" when you are finished.<br>
+<div id="foreground">
+<div id="container">
+<p class="space">Space Race</p><br><br>
+
+
+<h1>Complete the quiz in the time allowed.</h1><p>Click "Submit" when you are finished.</p><br>
 
 <div id="hide">
-<h1><div>Time left = <span id="timer"></span></div></h1><br><br>
+<h1><div class="spaceGreen">Time left = <span id="timer"></span></div></h1><br>
 
 <form name="quiz" method="post" name="buttons" id="quiz" onsubmit="return false">
 
-<ul><div class="question">Where would you find the Sea of Tranquility?</div></ul>
-<input id="answer" type="radio" name="group1" value="wrong"> Turkey<br>
-<input id="answer" type="radio" name="group1" value="wrong"> Asia<br>
-<input id="answer" type="radio" name="group1" value="correct"> The Moon<hr>
+<ul><h2><div class="question">Where would you find the<br>
+Sea of Tranquility?</div></h2></ul>
+<input id="answer" type="radio" name="group1" value="wrong"> Jupiter<br>
+<input id="answer" type="radio" name="group1" value="wrong"> Mars<br>
+<input id="answer" type="radio" name="group1" value="correct"> The Moon<br><br>
 
-<ul><div class="question">What is another word for lexicon?</div></ul>
-<input id="answer" type="radio" name="group2" value="wrong"> Manufacturer<br>
-<input id="answer" type="radio" name="group2" value="wrong"> Horse<br>
-<input id="answer" type="radio" name="group2" value="correct"> Dictionary<hr>
+<ul><h2><div class="question">The hottest place in the universe is <br>located in which constellation?</div></h2></ul>
+<input id="answer" type="radio" name="group2" value="wrong"> Libra<br>
+<input id="answer" type="radio" name="group2" value="wrong"> Scorpio<br>
+<input id="answer" type="radio" name="group2" value="correct"> Virgo<br><br>
 
-<ul><div class="question">Name the seventh planet from the sun</div></ul>
-<input id="answer" type="radio" name="group3" value="correct"> Uranus<br>
-<input id="answer" type="radio" name="group3" value="wrong"> Earth<br>
-<input id="answer" type="radio" name="group3" value="wrong"> Mars<hr>
+<ul><h2><div class="question">Name the seventh planet <br>from the sun</div></h2></ul>
+<input id="answer" type="radio" name="group3" value="wrong"> Uranus<br>
+<input id="answer" type="radio" name="group3" value="correct"> Earth<br>
+<input id="answer" type="radio" name="group3" value="wrong"> Mars<br><br>
 
+<ul><h2><h2><div class="question">How many planets are in the<br> Solar System?</div></h2></ul>
+<input id="answer" type="radio" name="group4" value="wrong"> Nine<br>
+<input id="answer" type="radio" name="group4" value="wrong"> Seven<br>
+<input id="answer" type="radio" name="group4" value="correct"> Eight<br><br>
+
+<ul><h2><div class="question">What is the largest planet <br>in our solar system?</div></h2></ul>
+<input id="answer" type="radio" name="group5" value="wrong"> Pluto<br>
+<input id="answer" type="radio" name="group5" value="wrong"> Earth<br>
+<input id="answer" type="radio" name="group5" value="correct"> Jupiter<br><br>
 
 <button id="submit" type="submit">Submit</button><br>
 
@@ -53,6 +68,6 @@
 
 
 
-
+</div>
 </body>
 </html>

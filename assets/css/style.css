@@ -1,24 +1,50 @@
+body {
+  background-color: #37226B;
+  color: #7C48AA;
+}
+
+
+#foreground{
+    background-image: url("../images/background.png"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+.space{
+  font-family:'Monoton','Gloria Hallelujah', cursive;
+  font-size: 65px;
+  color: #9EC54C;
+}
+
+.spaceGreen {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 25px;
+  color: #9EC54C;
+}
+
 #container{
-    width: 650px;
-    font-family: sans-serif;
-    margin: auto;
-    text-align: center;
-    padding-top: 25px;
-    line-height: 30px;
+  width: 100%;
+  height:1180px;
+  width: 800px;
+  font-family: 'helvetica', 'gotham', sans-serif;
+  margin: auto;
+  text-align: center;
+  padding-top: 85px;
+  line-height: 26px;
+  z-index: 5;
 }
 
 h1 {
-	font-size: 25px;
-	font-weight: bold;
+	font-size: 21px;
+  color: white;
 }
 
 p {
-  text-align: center;
-  font-size: 60px;
-  margin-top:0px;
+  color: white;
 }
 
 h2 {
 	font-weight: bold;
-	font-size: 15px;
+	font-size: 18px;
 }

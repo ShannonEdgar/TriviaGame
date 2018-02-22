@@ -3,7 +3,7 @@ $(document).ready(function() {
 var correctAnswers = 0
 var incorrectAnswers = 0
 var unansweredQuestions = 0
-var time = 10;
+var time = 100;
 var timer = setInterval(countDown, 1000)
 
 
@@ -50,13 +50,22 @@ $("#submit").click(function submit() {
   var radios = document.getElementsByName('group'+i);
   for(var j = 0; j < radios.length; j++) {
     var radio = radios[j];
-    if(radio.value == "correct" && radio.checked) {
+    // if (document.getElementById("radio.value").checked == false) {
+    //     console.log("working");
+    //     amountUnchecked++;  }
+      if (radio.value == "correct" && radio.checked) {
       amountCorrect++;}
       else if (radio.value == "wrong" && radio.checked) {
-      amountIncorrect++;}
-     else (radio.value != "wrong" && radio.value != "correct")
+      amountIncorrect++;} 
+      else if(!$('radio.value').is(':checked')){
       amountUnchecked++;
-}}
+} 
+}    
+
+
+
+
+}
      $("#results").html("Correct Responses: " + amountCorrect);
      $("#results2").html("Incorrect Responses: " + amountIncorrect);
      $("#results3").html("Unchecked Responses: " + amountUnchecked);
